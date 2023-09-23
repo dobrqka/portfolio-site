@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 10vh auto 5vh;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+header > button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  align-self: center;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+header > button:hover {
+  color: #00ff41;
+}
+
+.home-page {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: black;
+}
+
+.home-page > h1 {
+  color: white;
+  align-self: center;
+  justify-self: center;
+  padding-left: 4rem;
+}
+
+.dobrin {
+  color: red;
+}
+
+.rooster-main {
+  width: 30vw;
+  height: auto;
+  justify-self: end;
+  align-self: start;
+}
+
+h2 {
+  color: #00ff41;
+  grid-column: 2 / 3;
+  justify-self: center;
+  align-items: start;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  bottom: 0;
+}
+
+a > img {
+  width: 3rem;
+}
+
+a > img:hover {
+  transform: rotate(45deg);
+}
+
+.about-page {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 85vh;
+}
+
+.about-info {
+  display: grid;
+}
+
+.about-info > h2 {
+  justify-self: center;
+  grid-column: span 2;
+  align-self: center;
+  font-size: 2.5rem;
+}
+
+.about-page > div > p {
+  padding: 3rem;
+  font-size: 1.2em;
+  justify-self: stretch;
+  align-self: center;
+  grid-column: span 2;
+}
+
+#tldr {
+  grid-column: span 2;
+  justify-self: end;
+}
+
+p > a:link,
+p > a:visited {
+  color: #00ff41;
+  text-decoration: none;
+}
+
+p > a:hover {
+  color: #78ff9a;
+}
+
+.dobrin-pic {
+  width: 100%;
+  align-self: center;
+}
+
+.portfolio-page {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 3rem;
+  justify-items: center;
+}
+
+.portfolio-page > h2 {
+  grid-column: span 2;
+  font-size: 3rem;
+}
+
+.portfolio-page img {
+  width: 30vw;
+  justify-items: center;
+  transition: transform 0.2s;
+}
+
+.portfolio-page img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.portfolio-page div {
+  position: relative;
+}
+
+.portfolio-page button {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  background-color: #00ff41;
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+  width: 4rem;
+  height: 4rem;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  opacity: 0;
+  display: none;
+}
+
+.portfolio-page button:hover {
+  transform: scale(1.1);
+  background-color: #78ff9a;
+}
+
+.portfolio-page a:hover + a > button,
+a > button:hover {
+  display: inline-block;
+  opacity: 1;
+}
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-page > img {
+  width: auto;
+  height: 85vh;
+  justify-self: end;
+}
+
+.contact-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info h2 {
+  font-size: 3rem;
+}
+.contact-info p {
+  font-size: 2rem;
+}
+
+footer > div {
+  align-self: center;
+  display: flex;
+}
+
+.foot {
+  width: 3rem;
+}
+
+footer > div p {
+  align-self: end;
+}
