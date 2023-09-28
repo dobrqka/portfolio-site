@@ -1,12 +1,23 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Dosis", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Mooli", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   display: grid;
   grid-template-rows: 10vh auto 5vh;
   background-color: black;
+  min-width: 375px;
 }
 
 header {
@@ -53,7 +64,7 @@ header > button:hover {
   width: 30vw;
   height: auto;
   justify-self: end;
-  align-self: start;
+  align-self: center;
 }
 
 h2 {
@@ -85,7 +96,8 @@ a > img:hover {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 85vh;
+  height: auto;
+  min-height: 85vh;
 }
 
 .about-info {
@@ -101,15 +113,20 @@ a > img:hover {
 
 .about-page > div > p {
   padding: 3rem;
-  font-size: 1.2em;
+  font-size: 1.5em;
   justify-self: stretch;
   align-self: center;
   grid-column: span 2;
 }
 
-#tldr {
-  grid-column: span 2;
-  justify-self: end;
+.about-page > div > p:nth-child(2) {
+  align-self: center;
+  padding-bottom: 0;
+}
+
+.about-page > div > p:nth-child(3) {
+  padding-top: 1rem;
+  align-self: start;
 }
 
 p > a:link,
@@ -124,10 +141,11 @@ p > a:hover {
 
 .dobrin-pic {
   width: 100%;
-  align-self: center;
+  align-self: start;
 }
 
 .portfolio-page {
+  height: auto;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
